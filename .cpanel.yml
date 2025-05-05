@@ -1,0 +1,7 @@
+---
+deployment:
+  tasks:
+    # This copies all files in the repo to public_html 
+    # This runs on a git push to master
+    - export DEPLOYPATH=/home/russellp/public_html
+    - /bin/cp -R . $DEPLOYPATH
